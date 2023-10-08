@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Rodrigues - Page</title>
+    <link rel="shortcut icon" href="./lucas de preto quadrada.png" type="image/x-icon" />
+    <script src="https://kit.fontawesome.com/720eb943ab.js" crossorigin="anonymous"></script>
+</head>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: #f8f9fa;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .header-container {
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #000;
+    }
+
+    .header-container video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        width: 100%;
+        opacity: 0.2;
+        height: 100vh;
+    }
+
+    .header-container .logo-title {
+        position: relative;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        align-items:center;
+        margin-top: 10px;
+        gap: 40px;
+    }
+
+    .header-container .logo-title p {
+        display: block;
+        line-height: 50px;
+        font-size: 58px;
+        font-weight: 300;
+        color: #fff;
+        text-align: left;
+        text-shadow: 2px 2px 4px #000000;
+    }
+
+    .header-container .logo-title p b {
+        font-weight: 600;
+    }
+
+    .header-container .logo-title img {
+        width: 155px;
+        border-radius: 50%;
+    }
+
+    .header-container .text-container {
+        position: relative;
+        display: flex;
+        align-items:flex-start;
+        margin-top: 50px;
+    }
+
+    .text-container p {
+        color: #fff;
+        display: block;
+        width: 900px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        line-height: 71px;
+        text-align: center;
+        text-size-adjust: 100%;
+        font-size: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: 200;
+    }
+
+    .socials-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100px;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+
+    
+    
+
+    .socials-container  {
+        cursor: pointer;
+    }
+    
+    .copyright-container {
+        position: block;
+        color: #fff;
+        margin-top: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
+    
+    @media (max-width: 900px) {
+        .header-container .logo-title {
+            flex-direction: column;
+            justify-content: center;
+            width: 80%;
+            gap: 0;
+        }
+
+        .logo-title img {
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+
+        .header-container .logo-title p {
+            font-size: 35px;
+            line-height: 40px;
+            text-align: center;
+            margin: 0;
+        }
+
+         .text-container p {
+            font-size: 40px;
+            width: 80%;
+            line-height: 50px;
+        }
+
+        .copyright-container {
+            margin-top: 40px;
+        }
+    }
+</style>
+<body>
+    <div class="header-container">
+        <video poster autoplay muted loop>
+            <source src="./video_computacional.mp4" 
+                type="video/mp4"
+            >
+        </video>
+        <div class="logo-title">
+            <img src="./lucas de preto quadrada.png" alt="logo"/>
+            <p>
+                <b>Lucas Rodrigues <br/> Desenvolvendo soluções</b><br/>
+                Programador Full Stack
+            </p>
+        </div>
+
+        <section class="text-container">
+            <p>
+                “Design não é apenas o que parece e o que se sente. Design é como funciona.”<br/> Steve Jobs
+            </p>
+        </section>
+
+        <div class="socials-container">
+            <li>
+                 <a href="https://instagram.com">
+                <i class="fa-brands fa-instagram fa-2xl" style="color: #ee3aa3;"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com"> 
+                <i class="fa-brands fa-github fa-2xl " style="color: #ffffff;"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://linkedin.com"> 
+                <i class="fa-brands fa-linkedin fa-2xl"  style="color: #2c6ddd;"></i>
+                </a>
+            </li>
+        </div>
+
+        <div class="copyright-container">
+             <p>Desenvolvido por Lucas Rodrigues ©</p>   
+        </div>
+    </div>
+    
+</body>
+</html>
